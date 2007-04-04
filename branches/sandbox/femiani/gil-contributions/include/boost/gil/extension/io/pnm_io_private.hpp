@@ -376,10 +376,10 @@ public:
 		int pitch  = chn * width;
 		int type   = (num_channels<VIEW>::value == 1) ? type_gray_bin : type_color_bin;
 
-        print_line("P%i", type);
-        print_line("%i", width);
-        print_line("%i", height);
-        print_line("255");
+        print_line("P%i\n", type);
+        print_line("%i\n", width);
+        print_line("%i\n", height);
+        print_line("255\n");
         
 
 		// writes the raster
