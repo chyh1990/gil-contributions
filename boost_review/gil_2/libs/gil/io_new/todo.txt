@@ -1,0 +1,38 @@
+todo list
+
+* add planar bit_aligned image support - not so easy
+* when reading an indexed tiff image, it's better to use a virtual view.
+* incorporate Phil Endecott suggestions ( email 04/27/2008 )
+* also add John Femiani suggestions ( same date )
+
+
+* dynamic image needs to call is_allowed
+* try to test all interface functions seperately
+* make sure all fields are set in the read info structure
+* add one test file that includes all headers
+
+* there is a bug in when reading bmp that have negative height
+	- see check_coordinates()
+	- email by Joerg Gonska 05/08/2009
+
+* new tests
+	* make sure all members in all image_read_info<> are set when reading header information
+	* read and write tests using read_image and write_view
+	* all formats must have a subimage read tests
+
+
+* implement is_allowed for all types
+	* how do we do that with dynamic images???
+
+* reading p4.pnm is incorrect, reading 1bit binary pnm
+
+* add read_image_info for any_image
+
+
+* dynamic_writer don't take the settings. -FIXED- But need to wait for codes in boost/gil dynamic image extension
+
+* see libjpeg for cropping support
+
+* make sure to read all tiff properties
+
+* add a log facility for all image formats
